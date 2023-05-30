@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task1</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image:url(img/img1.jpg);
+                background-position:center;
+                background-size:cover;
+                font-family: sans-serif;
+                margin-top: 40px;
+                
+            }
+            
+            .regform{
+                background-color: #8d8c83;
+                width: 730px;
+                margin: auto;
+                color: white;
+                font-weight: bold;
+                padding: 7px 0px 7px 0px;
+                text-align: center;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+               
+               
+               
+                
+
+            }
+            .main{
+                background-color:rgb(209, 207, 207);
+                width: 730px;
+                margin: auto;
+                
+
+                
+            }
+             form{
+                 padding: 6px;
+                 
+             }
+             #name{
+                 width: 100%;
+                 height: 30px;
+             }
+             .name{
+                 margin-left: 25px;
+                 margin-top: 30px;
+                 width: 125px;
+                 color: rgb(3, 3, 3);
+                 font-size: 18px;
+                 font-weight: 700;
+             }
+             .firstname{
+                 position: relative;
+                 left:200px;
+                 top: -37px;
+                 line-height: 40px;
+                 border-radius: 6px;
+                 padding: 0 22px;
+                 font-size: 16px;
+                 border: none;
+             }
+             .lastname{
+                 position: relative;
+                 left: 385px;
+                 top: -80px;
+                 line-height: 40px;
+                 border-radius: 6px;
+                 padding: 0 25px;
+                 font-size: 16px;
+                 color: #555;
+                 border: none;
+             }
+             .firstlabel{
+                 position: relative;
+                 color: #4e4a4ad7;
+                 text-transform: capitalize;
+                 font-size: 14px;
+                 left: 201px;
+                 top: -45px;
+             }
+             .lastlabel{
+                 position: relative;
+                 color: #4e4a4ad7;
+                 text-transform: capitalize;
+                 font-size: 14px;
+                 left: 138px;
+                 top: -45px;
+             }
+             .company{
+                 position:relative;
+                 left: 200px;
+                 top: -5px;
+                 line-height: 40px;
+                 width: 458px;
+                 border-radius: 6px;
+                 padding: 0 22px;
+                 font-size: 16px;
+                 color: #555;
+                 border: none;
+             }
+             .email{
+                 position: relative;
+                 left: 200px;
+                 top: -20px;
+                 line-height: 40px;
+                 width: 458px;
+                 border-radius: 6px;
+                 padding: 0 22px;
+                 font-size: 16px;
+                 color: #555;
+                 border: none;
+             }
+             .code{
+                position: relative;
+                 left: 200px;
+                 top: -38px;
+                 line-height: 40px;
+                 width: 95px;
+                 border-radius: 6px;
+                 padding: 0 22px;
+                 font-size: 16px;
+                 color: #555;
+                 border: none;
+             }
+             .number{
+                position: relative;
+                 left: 126px;
+                 top: -38px;
+                 line-height: 40px;
+                 width: 298px;
+                 border-radius: 6px;
+                 padding: 0 26px;
+                 font-size: 16px;
+                 color: #555;
+                 border: none;
+             }
+             .area-code{
+                 position:relative;
+                 color: #4e4a4ad7;
+                 text-transform:capitalize;
+                font-size: 16px;
+                left: 54px;
+                top:-8px;
+             }
+             .phone-number{
+                position:relative;
+                 color: #4e4a4ad7;
+                 text-transform:capitalize;
+                font-size: 16px;
+                left: -227px;
+                top:-8px;
+             }
+             .option{
+                 position: relative;
+                 left: 200px;
+                 top: -53px;
+                 width: 508px;
+                 line-height: 60px;
+                 border-radius: 10px;
+                 padding: 0 22px;
+                 font-size: 30px;
+                 color: #555;
+                 outline: none;
+                 overflow: hidden;
+                 border: none;
+             }
+             .option option{
+                 font-size: 20px;
+             }
+             #costumer {
+                 margin-left: 25px;
+                 margin-top: -20px;
+                 color: rgb(39, 35, 35);
+                 font-size: 18px;
+             }
+             .radio-one{
+                 display: inline-block;
+                 padding-right:70px;
+                 font-size: 15px;
+                 margin-left: 30px;
+                 margin-top: 25px;
+                 color: whitesmoke;
+             }
+             .radio output{
+                 width: 20px;
+                 height: 20px;
+                 border-radius: 50%;
+                 cursor: pointer;
+                 outline-offset: 10px;
+             }
+             button{
+                 background-color: rgb(252, 95, 38);
+                 display: block;
+                 margin: 25px 0px 0px 20px;
+                 text-align: center;
+                 border-radius: 6px;
+                 border: 2px ;
+                 padding: 10px 50px;
+                 outline: none;
+                 color: whitesmoke;
+                 cursor: pointer;
+                 transition: 0.25px;
+             }
+             button:hover{
+                 background-color: rgb(194, 28, 28);
+             }
+             
+
+            
+            </style>
+    </head>
+    <body>
+        <div class="regform"><h1>EVENT REGISTRATION FORM</h1></div>
+        <div class="main">
+            <form>
+                <div id="name">
+                <h2 class="name">Name</h2>
+                <input class="firstname" type="text" name="first_name"><br>
+                <label class="firstlabel">First Name</label>
+                <input class="lastname" type="text" name="last name">
+                <label class="lastlabel">Last Name</label>
+            </div>
+        
+         <h2 class="name">Company</h2>
+         <input class="company" type="text" name="company" ><br>
+         
+         <h2 class="name">Email</h2>
+         <input class="email" type="text" name="email">
+
+         <h2 class="name">Phone</h2>
+         <input class="code" type="text" name="area_code">
+         <label class="area-code">Area Code</label>
+         <input class="number" type="text" name="phone">
+         <label class="phone-number">Phone Number</label>
+
+         <h2 class="name">Subject</h2>
+         <select class="option" name="subject">
+        <option disabled="disabled" selected="selected">--Choose Option</Option>
+        <option>Subject 1</option>
+        <option>Subject 2</option>
+        <option>Subject 3</option>
+         </select>
+
+         <h2 id="costumer">Are you an existing costumer</h2
+        
+        <label class="radio">
+            <input class="radio-one" type="radio" checked="checked" name="">
+            <span class="checkmark"></span>
+            Yes
+        </label>
+        <label class="radio">
+            <input class="radio-two" type="radio" name="">
+            <span class="checkmark"></span>
+            No
+        </label>
+ 
+        <button type="submit">Register</button>
+    </form>
+        </div>
+    </body>
+</html>
